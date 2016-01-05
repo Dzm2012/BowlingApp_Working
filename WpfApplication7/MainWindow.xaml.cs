@@ -216,12 +216,11 @@ namespace WpfApplication7
 
         private void btnAddPlayer_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            MainWindow1.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\nhartwell\Pictures\cats.png")));
         }
 
         private void btnAddPlayer_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            MainWindow1.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\nhartwell\Pictures\cats.png")));
+            MainWindow1.Background = new ImageBrush(new BitmapImage(new Uri(@"http://i.imgur.com/FJYL74J.png")));
         }
     }
 }
