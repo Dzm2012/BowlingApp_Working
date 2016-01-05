@@ -302,6 +302,7 @@ namespace WpfApplication7.Code
             {
                 if (i / 12 > names.Count)
                     break;
+                //DC: this is where the challenge message is getting duplicated 
                 ((Label)((Border)grid.Children[i]).Child).Content = string.Format("{0}\nCS:{1}",names[nameCounter],challengeScore);
                 nameCounter++;
             }
