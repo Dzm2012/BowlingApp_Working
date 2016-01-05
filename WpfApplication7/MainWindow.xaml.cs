@@ -204,7 +204,11 @@ namespace WpfApplication7
 
         private void btnAddPlayer_Click(object sender, RoutedEventArgs e)
         {
-
+            Random random = new Random();
+            int r = random.Next(255);
+            int g = random.Next(255);
+            int b = random.Next(255);
+            MainWindow1.Background = new SolidColorBrush(Color.FromRgb((byte)r, (byte)g, (byte)b));
         }
 
         #endregion
