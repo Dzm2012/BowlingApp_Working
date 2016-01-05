@@ -10,7 +10,7 @@
         <Button x:Name="btnExit" Content="X" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59" Click="btnExit_Click" Height="59" FontSize="40"/>
         <ContentControl x:Name="ccWindowBase" HorizontalAlignment="Left" Height="524" Margin="10,74,0,0" VerticalAlignment="Top" Width="1052">
             <Grid x:Name="grid" HorizontalAlignment="Left" Height="507" Margin="10,10,0,0" VerticalAlignment="Top" Width="1032">
-                
+
             </Grid>
         </ContentControl>
         <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="98,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn1_Click"/>
@@ -18,16 +18,20 @@
         <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="274,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn3_Click"/>
         <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="362,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn4_Click"/>
         <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="450,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn5_Click"/>
-        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="539,598,0,18" Width="83" FontSize="40" Click="btn6_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="539,598,0,0" Width="83" FontSize="40" Click="btn6_Click" Height="83" VerticalAlignment="Top"/>
         <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="627,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn7_Click"/>
         <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="715,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn8_Click"/>
         <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="803,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn9_Click"/>
         <Button x:Name="btnSpare" Content="/" HorizontalAlignment="Left" Margin="891,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnSpare_Click"/>
-        <Button x:Name="btnStrike" Content="X" HorizontalAlignment="Left" Margin="979,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnStrike_Click"/>
+        <Button x:Name="btnStrike" Content="X" HorizontalAlignment="Left" Margin="979,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnStrike_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
         <Button x:Name="btnGutter" Content="-" HorizontalAlignment="Left" Margin="10,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnGutter_Click"/>
         <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="887,10,0,0" VerticalAlignment="Top" Width="154" Height="59" FontSize="40" Click="btnStart_Click"/>
         <Button x:Name="btnAddPlayer" Content="Add Player" HorizontalAlignment="Left" Margin="679,10,0,0" VerticalAlignment="Top" Width="200" Height="59" FontSize="40" Click="btnAddPlayer_Click" MouseDoubleClick="btnAddPlayer_MouseDoubleClick" MouseRightButtonUp="btnAddPlayer_MouseRightButtonUp"/>
-        <Button x:Name="btnSetLane" Content="Set Lane" HorizontalAlignment="Left" Margin="412,0,0,632" VerticalAlignment="Bottom" Width="196" Height="59" FontSize="40" Click="btnSetLane_Click"/>
+        <Button x:Name="btnSetLane" Content="Set Lane" HorizontalAlignment="Left" Margin="412,10,0,0" Width="196" FontSize="40" Click="btnSetLane_Click" Height="59" VerticalAlignment="Top"/>
         <TextBox x:Name="tbLaneNumber" HorizontalAlignment="Left" Height="59" Margin="613,10,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="58" FontSize="40"/>
         <Button x:Name="btnChallenge" Content="Challenge" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Width="209" Height="59" FontSize="40" Click="btnChallenge_Click"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="74,10,0,0" VerticalAlignment="Top" Width="108" Height="59"/>
