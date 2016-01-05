@@ -210,8 +210,6 @@ namespace WpfApplication7
             int b = random.Next(255);
             MainWindow1.Background = new SolidColorBrush(Color.FromRgb((byte)r, (byte)g, (byte)b));
         }
-
-
         #endregion
 
         private void btnAddPlayer_MouseDoubleClick(object sender, MouseButtonEventArgs e)
