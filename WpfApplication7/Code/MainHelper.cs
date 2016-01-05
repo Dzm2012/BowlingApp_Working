@@ -455,6 +455,55 @@ namespace WpfApplication7.Code
                     ((Label)((Border)grid.Children[i + (activeRow * 12)]).Child).Content = string.Format(" {0} {1} \n{2}", throw1, throw2, total);
 
                 }
+                if(((Label)((Border)grid.Children[11+(activeRow * 12)]).Child).Content.ToString().Trim()!="")
+                {
+                    int frameTotal = 0;
+                    string content = ((Label)((Border)grid.Children[11 + (activeRow * 12)]).Child).Content.ToString();
+                    string throw1 = content.Split(new string[] { " " },StringSplitOptions.RemoveEmptyEntries)[0];
+                    string throw2 = content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1];
+                    string throw3 = "";
+                    if(content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Count()>2)
+                        throw3 = content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[2];
+                    if(throw1=="X")
+                    {
+                        frameTotal += 10;
+                    }
+                    else
+                    {
+                        frameTotal += Convert.ToInt32(throw1);
+                    }
+
+                    if (throw2 == "X")
+                    {
+                        frameTotal += 10;
+                    }
+                    else if (throw2 == "/")
+                    {
+                        frameTotal += (10 - Convert.ToInt32(throw1));
+                    }
+                    else
+                    {
+                        frameTotal += Convert.ToInt32(throw2);
+                    }
+
+                    if (throw3 != "")
+                    {
+                        if (throw3 == "X")
+                        {
+                            frameTotal += 10;
+                        }
+                        else if (throw3 == "/")
+                        {
+                            frameTotal += (10 - Convert.ToInt32(throw2));
+                        }
+                        else
+                        {
+                            frameTotal += Convert.ToInt32(throw3);
+                        }
+                    }
+                    total += frameTotal;
+                    ((Label)((Border)grid.Children[11 + (activeRow * 12)]).Child).Content = string.Format(" {0} {1} {2}\n{3}", throw1, throw2, throw3, total);
+                }
             }
         }
 
