@@ -303,8 +303,13 @@ namespace WpfApplication7.Code
                 if (i / 12 > names.Count)
                     break;
                 //DC: this is where the challenge message is getting duplicated 
+                //DC: fixed by continuing when challenge text is already applied
                 if (names[nameCounter].Contains("\n"))
-                    names[nameCounter] = names[nameCounter].Split(new string[] { "\n" },StringSplitOptions.None)[0];
+                {
+                    ((Label)((Border)grid.Children[i]).Child).Content = string.Format("{0}", names[nameCounter]);
+                    nameCounter++;
+                    continue;
+                }
                 ((Label)((Border)grid.Children[i]).Child).Content = string.Format("{0}\nCS:{1}",names[nameCounter],challengeScore);
                 nameCounter++;
             }
