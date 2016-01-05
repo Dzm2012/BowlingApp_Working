@@ -455,12 +455,15 @@ namespace WpfApplication7.Code
                     ((Label)((Border)grid.Children[i + (activeRow * 12)]).Child).Content = string.Format(" {0} {1} \n{2}", throw1, throw2, total);
 
                 }
+                #region Last Frame Calculations
                 if(((Label)((Border)grid.Children[11+(activeRow * 12)]).Child).Content.ToString().Trim()!="")
                 {
                     int frameTotal = 0;
                     string content = ((Label)((Border)grid.Children[11 + (activeRow * 12)]).Child).Content.ToString();
                     string throw1 = content.Split(new string[] { " " },StringSplitOptions.RemoveEmptyEntries)[0];
-                    string throw2 = content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1];
+                    string throw2 = "0";
+                    if (content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Count()>1)
+                        throw2 = content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[1];
                     string throw3 = "";
                     if(content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Count()>2)
                         throw3 = content.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries)[2];
@@ -504,6 +507,7 @@ namespace WpfApplication7.Code
                     total += frameTotal;
                     ((Label)((Border)grid.Children[11 + (activeRow * 12)]).Child).Content = string.Format(" {0} {1} {2}\n{3}", throw1, throw2, throw3, total);
                 }
+                #endregion
             }
         }
 
@@ -545,7 +549,7 @@ namespace WpfApplication7.Code
                     }
                     else
                     {
-                        ((Label)((Border)grid.Children[i]).Child).FontSize = 40;
+                        ((Label)((Border)grid.Children[i]).Child).FontSize = 20+ (20-(Scores.Count*2));
                         ((Label)((Border)grid.Children[i]).Child).Content = string.Format(" {0}  {1} ", player.Throws[throwCounter], player.Throws[throwCounter + 1]);
                         throwCounter += 2;
                     }
