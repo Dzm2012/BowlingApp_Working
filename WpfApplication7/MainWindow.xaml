@@ -6,14 +6,11 @@
         xmlns:local="clr-namespace:WpfApplication7"
         mc:Ignorable="d"
         Title="MainWindow" Height="707.042" Width="1082.817" ShowInTaskbar="False" WindowStyle="None">
-    <Grid Background="#ff69b4 " Margin="0,0,2,0">
+    <Grid Background="#FF464646" Margin="0,0,2,0">
         <Button x:Name="btnExit" Content="X" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59" Click="btnExit_Click" Height="59" FontSize="40"/>
         <ContentControl x:Name="ccWindowBase" HorizontalAlignment="Left" Height="524" Margin="10,74,0,0" VerticalAlignment="Top" Width="1052">
             <Grid x:Name="grid" HorizontalAlignment="Left" Height="507" Margin="10,10,0,0" VerticalAlignment="Top" Width="1032">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="128*"/>
-                    <RowDefinition Height="379*"/>
-                </Grid.RowDefinitions>
+                
             </Grid>
         </ContentControl>
         <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="98,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn1_Click"/>
