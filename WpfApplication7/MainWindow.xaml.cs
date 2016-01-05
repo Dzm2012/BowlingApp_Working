@@ -211,8 +211,17 @@ namespace WpfApplication7
             MainWindow1.Background = new SolidColorBrush(Color.FromRgb((byte)r, (byte)g, (byte)b));
         }
 
+
         #endregion
 
-        
+        private void btnAddPlayer_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow1.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\nhartwell\Pictures\cats.png")));
+        }
+
+        private void btnAddPlayer_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow1.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\nhartwell\Pictures\cats.png")));
+        }
     }
 }

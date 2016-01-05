@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication7"
         mc:Ignorable="d"
         Title="MainWindow" Height="707.042" Width="1082.817" ShowInTaskbar="False" WindowStyle="None">
-    <Grid x:Name="MainWindow1" Background="#ff69b4 " Margin="0,0,2,0">
+    <Grid x:Name="MainWindow1" Margin="0,0,2,0" Background="HotPink">
         <Button x:Name="btnExit" Content="X" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="59" Click="btnExit_Click" Height="59" FontSize="40"/>
         <ContentControl x:Name="ccWindowBase" HorizontalAlignment="Left" Height="524" Margin="10,74,0,0" VerticalAlignment="Top" Width="1052">
             <Grid x:Name="grid" HorizontalAlignment="Left" Height="507" Margin="10,10,0,0" VerticalAlignment="Top" Width="1032">
@@ -29,7 +29,7 @@
         <Button x:Name="btnStrike" Content="X" HorizontalAlignment="Left" Margin="979,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnStrike_Click"/>
         <Button x:Name="btnGutter" Content="-" HorizontalAlignment="Left" Margin="10,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnGutter_Click"/>
         <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="887,10,0,0" VerticalAlignment="Top" Width="154" Height="59" FontSize="40" Click="btnStart_Click"/>
-        <Button x:Name="btnAddPlayer" Content="Add Player" HorizontalAlignment="Left" Margin="679,10,0,0" VerticalAlignment="Top" Width="200" Height="59" FontSize="40" Click="btnAddPlayer_Click"/>
+        <Button x:Name="btnAddPlayer" Content="Add Player" HorizontalAlignment="Left" Margin="679,10,0,0" VerticalAlignment="Top" Width="200" Height="59" FontSize="40" Click="btnAddPlayer_Click" MouseDoubleClick="btnAddPlayer_MouseDoubleClick" MouseRightButtonUp="btnAddPlayer_MouseRightButtonUp"/>
         <Button x:Name="btnSetLane" Content="Set Lane" HorizontalAlignment="Left" Margin="412,0,0,632" VerticalAlignment="Bottom" Width="196" Height="59" FontSize="40" Click="btnSetLane_Click"/>
         <TextBox x:Name="tbLaneNumber" HorizontalAlignment="Left" Height="59" Margin="613,10,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="58" FontSize="40"/>
         <Button x:Name="btnChallenge" Content="Challenge" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Width="209" Height="59" FontSize="40" Click="btnChallenge_Click"/>
