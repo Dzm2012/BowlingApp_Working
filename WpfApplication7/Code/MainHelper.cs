@@ -43,7 +43,9 @@ namespace WpfApplication7.Code
                     {
                         rectangle.Background = new SolidColorBrush(Colors.Gray);
                     }
+                    
                     rectangle.Child = new Label();
+
                     rectangle.Margin = new Thickness(0, 0, grid.Width - ((grid.Width / 12) * (i * 2)), ((grid.Height + rectangle.Height) - ((rectangle.Height * 2) * (o + 1))));
                     grid.Children.Add(rectangle);
                 }
@@ -300,7 +302,7 @@ namespace WpfApplication7.Code
             {
                 if (i / 12 > names.Count)
                     break;
-                ((Label)((Border)grid.Children[i]).Child).Content = string.Format("{0}\nChallenge Score:{1}",names[nameCounter],challengeScore);
+                ((Label)((Border)grid.Children[i]).Child).Content = string.Format("{0}\nCS:{1}",names[nameCounter],challengeScore);
                 nameCounter++;
             }
         }

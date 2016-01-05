@@ -38,7 +38,7 @@ namespace WpfApplication7.Code
         public void GetData()
         {
             Scores = new List<Player>();
-            string Url = "http://www.xbowling.com/LiveScores/lane.html#/country/United States/administrativeArea/New Hampshire/venue/5361/venueName/Dover Bowl/lane/" + laneNumber;
+            string Url = Constiants.DebugLanes + laneNumber;
             if (driver == null)
             {
                 driver = new ChromeDriver();
