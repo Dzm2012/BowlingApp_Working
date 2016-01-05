@@ -441,7 +441,7 @@ namespace WpfApplication7.Code
                         throw2 = Convert.ToInt32(throws[throwCounter].ToString());
                     throwCounter++;
                     total += throw1 + throw2;
-
+                    //DC: This might be the cause of the flashing
                     ((Label)((Border)grid.Children[i + (activeRow * 12)]).Child).Content = string.Format(" {0} {1} \n{2}", throw1, throw2, total);
 
                 }
