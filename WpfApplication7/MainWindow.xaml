@@ -24,9 +24,7 @@
         <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="803,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btn9_Click"/>
         <Button x:Name="btnSpare" Content="/" HorizontalAlignment="Left" Margin="891,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnSpare_Click"/>
         <Button x:Name="btnStrike" Content="X" HorizontalAlignment="Left" Margin="979,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnStrike_Click">
-            <Button.Effect>
-                <DropShadowEffect/>
-            </Button.Effect>
+            
         </Button>
         <Button x:Name="btnGutter" Content="-" HorizontalAlignment="Left" Margin="10,598,0,0" VerticalAlignment="Top" Width="83" Height="83" FontSize="40" Click="btnGutter_Click"/>
         <Button x:Name="btnStart" Content="START" HorizontalAlignment="Left" Margin="887,10,0,0" VerticalAlignment="Top" Width="154" Height="59" FontSize="40" Click="btnStart_Click"/>
